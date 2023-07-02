@@ -5,11 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Luka Kapetanovic Portfolio</title>
 </head>
 
 <body>
+    <header class="header container-margin">
+        <nav class='nav-bar'>
+            <h1>Luka Kapetanovic</h1>
+            <ul class=" nav-bar-links">
+                <li class="link"><a href="#about-section">About</a></li>
+                <li class="hide">-</li>
+                <li class="link"><a href="#projects-section">Projects</a></li>
+                <li class="hide">-</li>
+                <li class="link"><a href="#contact-section">Contact</a></li>
+            </ul>
 
+            <button class="hamburger">
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="about-section">
+            <div class="gradient-1"></div>
+            <div class="left-block">
+                <div class="eclipse eclipse-1"></div>
+                <div class="eclipse eclipse-2"></div>
+                <div class="eclipse eclipse-3"></div>
+                <img src=" ./imgs/luka.kapetanovic.png" alt="Image of Developer Luka Kapetanovic">
+            </div>
+
+            <div class="right-block">
+                <!-- <p> -->
+                <p>Welcome everyone, I am</p>
+                <h1><em>Luka Kapetanovic</em></h1>
+                <p>, A web developer based out of Belgrade,Serbia.</p>
+                <!-- </p> -->
+            </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
