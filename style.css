@@ -143,15 +143,19 @@ nav {
 }
 
 #about-section {
-    margin: 5rem;
+    margin: 2rem;
+    padding: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .left-block img {
     max-width: 300px;
     border-radius: 100%;
+    filter: drop-shadow(0.40rem 0.40rem 0.4rem rgba(0, 0, 0, 0.5));
+    filter: grayscale(0.35);
 }
 
 .eclipse {
@@ -165,7 +169,7 @@ nav {
 
 .eclipse-1 {
     top: 87px;
-    animation: floating 3s ease-in-out infinite
+    /* opacity: 0.50 */
 }
 
 
@@ -177,4 +181,14 @@ nav {
 .eclipse-3 {
     top: 123px;
     right: 57px;
+}
+
+.gradient-1 {
+    height: 40%;
+    position: absolute;
+    width: 42%;
+    background-color: #3d3d3d;
+    right: 134px;
+    z-index: -1;
+    opacity: 30%;
 }
