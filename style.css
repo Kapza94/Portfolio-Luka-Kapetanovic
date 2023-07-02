@@ -11,6 +11,7 @@
         padding: 1.5rem 3.2rem;
         width: 5px;
         margin-right: 35px;
+        display: block;
     }
 
     .hide {
@@ -39,24 +40,25 @@
 
     .nav-bar-links {
         position: fixed;
-        transform: translateX(120%);
+        transform: translateX(150%);
         transition: transform 0.2s;
-        top: 0;
-        right: 0;
+        top: 80px;
+        right: 2.5rem;
         bottom: 0;
         z-index: 99;
         background: #242424;
         color: whitesmoke;
         list-style: none;
-        padding-top: 2rem;
-        width: 15%;
+        width: fit-content;
         border: #E4B363 3px solid;
-        border-radius: 50px;
+        border-radius: 15px;
         display: flex !important;
         flex-direction: column !important;
-        justify-content: space-around !important;
+        justify-content: unset !important;
         align-items: center !important;
-        margin-right: 20px;
+        height: fit-content;
+        margin: 0;
+        padding: 0;
     }
 
     .showMenu {
@@ -112,4 +114,24 @@ nav {
 
 .hamburger {
     display: none;
+}
+
+.right-block h1 {
+    all: unset;
+}
+
+.right-block p {
+    font-size: 40px;
+}
+
+#about-section {
+    margin: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-block img {
+    max-width: 300px;
+    border-radius: 100%;
 }
