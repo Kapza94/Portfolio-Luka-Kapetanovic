@@ -2,6 +2,10 @@
 
 @media only screen and (max-width: 768px) {
 
+    .container-margin {
+        margin: 0.5rem 1rem !important;
+    }
+
     .hamburger {
         display: block !important;
     }
@@ -101,7 +105,7 @@ nav {
     color: #E4B363;
 }
 
-.header {
+.container-margin {
     margin: 0.5rem 2rem;
 }
 
@@ -117,11 +121,25 @@ nav {
 }
 
 .right-block h1 {
-    all: unset;
+    display: inline;
+    margin-left: 5px;
 }
 
 .right-block p {
     font-size: 40px;
+    margin: 0;
+    display: inline;
+}
+
+.right-block {
+    padding: 0 4rem;
+}
+
+.left-block {
+    padding: 0 4rem;
+    position: relative;
+    border-right: #E4B363 5px solid;
+
 }
 
 #about-section {
@@ -134,4 +152,29 @@ nav {
 .left-block img {
     max-width: 300px;
     border-radius: 100%;
+}
+
+.eclipse {
+    width: 75px;
+    height: 75px;
+    border: #E4B363 2px solid;
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.eclipse-1 {
+    top: 87px;
+    animation: floating 3s ease-in-out infinite
+}
+
+
+.eclipse-2 {
+    top: 1px;
+    right: 110px;
+}
+
+.eclipse-3 {
+    top: 123px;
+    right: 57px;
 }
