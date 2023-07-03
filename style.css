@@ -2,6 +2,7 @@
 
 @media only screen and (max-width: 768px) {
 
+    /* Nav bar responsive */
     .container-margin {
         margin: 0.5rem 1rem !important;
     }
@@ -68,8 +69,108 @@
     .showMenu {
         transform: translateX(0);
     }
+
+    /* About Section responsive */
+
+    #about-section {
+        display: flex !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+    }
+
+    .right-block h1 {
+        display: inline !important;
+        margin-left: 5px !important;
+        font-size: 1.5rem !important;
+    }
+
+    .right-block p {
+        font-size: 1.4rem !important;
+        margin: 0;
+        display: inline;
+    }
+
+    .right-block {
+        width: 80VW !important;
+        padding: 1rem 1rem !important;
+        margin: 0 1rem !important;
+    }
+
+    .left-block img {
+        max-width: 200px !important;
+        border-radius: 100%;
+        filter: drop-shadow(0.40rem 0.40rem 0.4rem rgba(0, 0, 0, 0.5));
+        filter: grayscale(0.35);
+    }
+
+    .left-block {
+        border: none !important;
+    }
+
+    .eclipse-1 {
+        top: 74px !important;
+        left: 49px !important;
+        height: 50px !important;
+        width: 50px !important;
+    }
+
+    .eclipse-2 {
+        top: -16px !important;
+        left: 104px !important;
+        height: 50px !important;
+        width: 50px !important;
+    }
+
+    .eclipse-3 {
+        top: 50px !important;
+        left: 195px !important;
+        height: 50px !important;
+        width: 50px !important;
+    }
+
+    /* PROJECTS SECTION RESPONSIVE */
+
+    .projects-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .programming-img {
+        max-width: 100% !important;
+        filter: drop-shadow(0.40rem 0.40rem 0.4rem rgba(0, 0, 0, 0.5));
+    }
+
+    .project-module {
+        margin: 1rem 0 !important;
+        padding: 1rem 0.5rem !important;
+        width: 100% !important;
+        background-color: rgba(61, 61, 61, 0.3);
+    }
+
+    .projects-pane-left .project-module:nth-child(2) {
+        margin-bottom: 0 !important;
+    }
 }
 
+
+/* FOR ANOMALY BETWEEN SET PIXELS */
+@media only screen and (min-width: 769px) and (max-width: 1000px) {
+    #about-section {
+        margin: 2rem;
+        padding: 2rem 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+    }
+
+    .right-block {
+        margin-top: 50px !important;
+    }
+
+    .left-block {
+        border: none !important;
+    }
+}
 
 
 
@@ -80,7 +181,7 @@ body {
 }
 
 
-
+/* HEADER SECTION */
 nav {
     display: flex;
     justify-content: space-between;
@@ -106,7 +207,7 @@ nav {
 }
 
 .container-margin {
-    margin: 0.5rem 2rem;
+    margin: 0.5rem 3rem;
 }
 
 
@@ -120,6 +221,7 @@ nav {
     display: none;
 }
 
+/* ABOUT SECTION */
 .right-block h1 {
     display: inline;
     margin-left: 5px;
@@ -132,7 +234,11 @@ nav {
 }
 
 .right-block {
-    padding: 0 4rem;
+    padding: 1rem;
+    margin-left: 3.5rem;
+    position: relative;
+    width: 80%;
+    background-color: rgba(61, 61, 61, 0.3);
 }
 
 .left-block {
@@ -143,8 +249,8 @@ nav {
 }
 
 #about-section {
-    margin: 2rem;
-    padding: 4rem;
+    margin: 2rem 0;
+    padding: 4rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -169,7 +275,6 @@ nav {
 
 .eclipse-1 {
     top: 87px;
-    /* opacity: 0.50 */
 }
 
 
@@ -183,12 +288,65 @@ nav {
     right: 57px;
 }
 
-.gradient-1 {
-    height: 40%;
-    position: absolute;
-    width: 42%;
-    background-color: #3d3d3d;
-    right: 134px;
-    z-index: -1;
-    opacity: 30%;
+/* PROJECTS SECTION */
+
+#projects-section {
+    padding-top: 1rem;
+}
+
+.project-module {
+    margin: 2rem 2rem;
+    padding: 1rem 1rem;
+    width: 400px;
+    background-color: rgba(61, 61, 61, 0.3);
+}
+
+.projects-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.programming-img {
+    max-width: 250px;
+    filter: drop-shadow(0.40rem 0.40rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.icon {
+    width: 20px;
+}
+
+.project-module h3 {
+    margin-top: 0;
+}
+
+#projects-section h2 {
+    display: flex;
+    align-items: center;
+}
+
+#projects-section h2::before {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: #E4B363;
+    margin-right: 0.4rem;
+}
+
+#projects-section h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #E4B363;
+    margin-left: 0.4rem;
+}
+
+.project-heading::after {
+    content: '';
+    display: block;
+    width: 251px;
+    height: 1.5px;
+    background-color: #E4B363;
+    margin-top: 1rem;
 }
