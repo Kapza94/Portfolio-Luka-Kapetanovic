@@ -28,3 +28,13 @@ links.forEach(
         link.addEventListener("click", toggleMenu);
     }
 )
+
+// Stops default html form submission
+const validateMyForm = (e) => {
+    e.preventDefault()
+}
+
+// onclick form color change
+
+let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}')
+
