@@ -102,6 +102,55 @@
                 </div>
             </div>
         </div>
+
+        <div id="contact">
+            <div class="contact-form">
+                <h2><span>Contact me</span></h2>
+
+                <form onsubmit="validateMyForm(e)">
+                    <div class="contact-form-input-element">
+                        <label for="firstNameField" class="contact-form-label-spacing">First Name:</label>
+                        <input type="text" class="contact-form-input-field contact-form-input-fname"
+                            name="firstNameField" placeholder="first name here">
+                    </div>
+
+                    <div class="contact-form-input-element">
+                        <label for="lastNameField" class="contact-form-label-spacing">Last Name:</label>
+                        <input type="text" class="contact-form-input-field contact-form-input-lname"
+                            name="lastNameField" placeholder="last name here">
+                    </div>
+
+                    <div class="contact-form-input-element">
+                        <label for="emailField" class="contact-form-label-spacing">Email:</label>
+                        <input type="text" class="contact-form-input-field contact-form-input-email" name="emailField"
+                            placeholder="Enter email here">
+                    </div>
+
+                    <div class="contact-form-input-element">
+                        <label for="phoneNumberField" class="contact-form-label-spacing">Phone:</label>
+                        <input type="tel" class="contact-form-input-field contact-form-input-phone" min="6" max="10"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####" name="phoneNumberField">
+                    </div>
+
+                    <div class="contact-form-input-element">
+                        <label for="messageField" class="contact-form-label-spacing">Message:</label>
+                        <textarea class="contact-form-input-field" name="messageField" id="messageField" rows="3"
+                            cols="50"></textarea>
+                    </div>
+
+                    <div class="contact-form-input-element">
+                        <input type="submit" name="submit" id="contact-form-submit-button" value="submit">
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="contact-details">
+                <h2>My Contact Details</h2>
+
+            </div>
+        </div>
+
     </main>
 
     <script src="./script.js"></script>
