@@ -28,13 +28,41 @@ links.forEach(
         link.addEventListener("click", toggleMenu);
     }
 )
-
+// ----------------------------------------------------------------------------
 // Stops default html form submission
 const validateMyForm = (e) => {
-    e.preventDefault()
+    // e.preventDefault()
+    console.log(e)
 }
 
 // onclick form color change
 
 let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}')
+
+let fName = document.querySelector('.contact-form-input-fname');
+let lName = document.querySelector('.contact-form-input-lname');
+let email = document.querySelector('.contact-form-input-email');
+let phone = document.querySelector('.contact-form-input-phone');
+
+
+// fName.onchange = function (e) {
+//     if (e.target.value === '') {
+//         alert('Please fill in the required information before submitting')
+//     }
+// }
+
+fName.addEventListener('input', function (e) {
+    if (e.target.value === '') {
+        alert('Please fill in the required information before submitting')
+    }
+})
+
+// console.log(fName)
+
+
+
+
+
+
+
 
