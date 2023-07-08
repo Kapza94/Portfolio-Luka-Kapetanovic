@@ -150,6 +150,21 @@
     .projects-pane-left .project-module:nth-child(2) {
         margin-bottom: 0 !important;
     }
+
+
+    #contact {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .contact-form-input-element {
+        width: 100% !important;
+    }
+
+    .contact-form-input-field {
+        width: 100% !important;
+    }
 }
 
 
@@ -170,6 +185,7 @@
     .left-block {
         border: none !important;
     }
+
 }
 
 
@@ -338,7 +354,7 @@ nav {
 .contact-form h2::after {
     content: '';
     display: block;
-    width: 100%;
+    width: 90%;
     height: 3px;
     background-color: #E4B363;
     margin-left: 0.4rem;
@@ -387,7 +403,7 @@ form {
 
 .contact-form h2 span {
     display: block;
-    width: 34%;
+    width: 25%;
 }
 
 .contact-form-input-element #contact-form-submit-button {
@@ -404,4 +420,67 @@ input,
 textarea {
     border-radius: 5px;
     background-color: antiquewhite;
+    border: unset;
+
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    outline: unset;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.serbia-img {
+    max-width: 150px;
+    margin-left: 1rem;
+}
+
+.contact-details {
+    width: 50%;
+}
+
+.bottom-margin {
+    margin-bottom: 20px;
+}
+
+.contact-details-container {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.myContactDetails {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.myContactDetails span {
+    display: block;
+    width: 44%;
+}
+
+.myContactDetails::after {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 3px;
+    background-color: #E4B363;
+    margin-left: 0.4rem;
+}
+
+.contact-details-container-locationField {
+    display: flex;
+    align-items: center;
+}
+
+.contact-links {
+    color: inherit;
+}
+
+.contact-links {
+    padding: 5px 20px;
 }
