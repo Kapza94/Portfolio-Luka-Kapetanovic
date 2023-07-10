@@ -17,8 +17,7 @@
     }
 
     .logo {
-        position: relative !important;
-        top: 0.5rem !important;
+        padding: 1.1rem 0;
         font-size: 1.5em !important;
     }
 
@@ -39,17 +38,13 @@
     }
 
     .hamburger {
-        position: fixed;
         z-index: 100;
-        top: 0.4rem;
-        right: -1rem;
         padding: 4px;
         border: whitesmoke solid 1px;
         border-radius: 100px;
         background: #242424;
         color: whitesmoke;
         cursor: pointer;
-        margin-top: .5rem;
         margin-right: 2rem;
 
     }
@@ -358,6 +353,7 @@ nav .logo {
     font-size: 40px;
     margin: 0;
     display: inline;
+    line-height: 1.15em;
 }
 
 .right-block {
@@ -532,9 +528,17 @@ form {
     background-color: #E4B363;
     filter: drop-shadow(0.40rem 0.40rem 0.4rem rgba(0, 0, 0, 0.5));
     padding: 0.5rem 1.5rem;
-    outline: none;
     border: none;
     font-size: 1rem;
+}
+
+.contact-form-input-element #contact-form-submit-button:hover {
+    padding: 1.2rem 1.8rem;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 20px 20px 60px #0e0e0e,
+        -20px -20px 60px #3a3a3a;
+    transition: 1s;
 }
 
 input,
