@@ -3,8 +3,23 @@
 @media only screen and (max-width: 768px) {
 
     /* Nav bar responsive */
+
+    header {
+        width: 100% !important;
+    }
+
     .container-margin {
-        margin: 0.5rem 1rem !important;
+        width: 100% !important;
+    }
+
+    .nav-bar {
+        width: 100%;
+    }
+
+    .logo {
+        position: relative !important;
+        top: 0.5rem !important;
+        font-size: 1.5em !important;
     }
 
     .hamburger {
@@ -26,8 +41,8 @@
     .hamburger {
         position: fixed;
         z-index: 100;
-        top: 1rem;
-        right: 1rem;
+        top: 0.4rem;
+        right: -1rem;
         padding: 4px;
         border: whitesmoke solid 1px;
         border-radius: 100px;
@@ -76,6 +91,13 @@
         display: flex !important;
         justify-content: center !important;
         flex-direction: column !important;
+        width: 100% !important;
+        padding: 1rem 0 !important;
+    }
+
+    .right-block {
+        margin: 0 auto !important;
+        width: auto !important;
     }
 
     .right-block h1 {
@@ -90,13 +112,6 @@
         display: inline;
     }
 
-    .right-block {
-        /* width: 80VW !important; */
-        padding: 1rem 1rem !important;
-        margin: 0 1rem !important;
-        box-shadow: 20px 20px 60px #0e0e0e,
-            -20px -20px 60px #3a3a3a !important;
-    }
 
     .left-block img {
         max-width: 200px !important;
@@ -136,6 +151,10 @@
     .projects-main {
         display: flex;
         flex-direction: column;
+    }
+
+    #projects-section .projects-main {
+        padding: 1rem 1rem !important;
     }
 
     .programming-img {
@@ -212,8 +231,13 @@
     }
 
     .contact-form h2 span {
-        display: block;
-        width: 104% !important;
+        display: block !important;
+        width: 64% !important;
+    }
+
+    #form {
+        width: 80%;
+        margin: 0 auto;
     }
 
     .myContactDetails span {
@@ -221,8 +245,17 @@
         width: 399% !important;
     }
 
+    .myContactDetails::after {
+        /* width: 259% !important; */
+    }
+
     .spacing {
-        margin: 0;
+        margin-right: 0 !important;
+    }
+
+    .contact-details-container {
+        margin: 0 auto !important;
+        width: 80% !important;
     }
 }
 
@@ -259,12 +292,19 @@ body {
 
 
 /* HEADER SECTION */
+
+header {
+    width: 100%;
+    border-bottom: #E4B363 3px solid;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: #E4B363 3px solid;
     z-index: 9999;
+    margin: 0 auto;
+    width: 1440px;
 }
 
 nav .logo {
@@ -273,6 +313,7 @@ nav .logo {
     text-decoration: none;
     color: whitesmoke;
     font-style: italic;
+    display: block;
 }
 
 .nav-bar-links li {
@@ -292,7 +333,8 @@ nav .logo {
 }
 
 .container-margin {
-    margin: 0.5rem 3rem;
+    width: 1440px;
+    margin: 0 auto;
 }
 
 
@@ -337,7 +379,7 @@ nav .logo {
 
 #about-section {
     margin: 2rem 0;
-    padding: 4rem 0;
+    padding: 4rem 11rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -379,6 +421,10 @@ nav .logo {
 
 #projects-section {
     padding-top: 1rem;
+}
+
+#projects-section .projects-main {
+    padding: 1rem 6rem;
 }
 
 .project-module {
