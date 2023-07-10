@@ -17,8 +17,7 @@
     }
 
     .logo {
-        position: relative !important;
-        top: 0.5rem !important;
+        padding: 1.1rem 0;
         font-size: 1.5em !important;
     }
 
@@ -39,17 +38,13 @@
     }
 
     .hamburger {
-        position: fixed;
         z-index: 100;
-        top: 0.4rem;
-        right: -1rem;
         padding: 4px;
         border: whitesmoke solid 1px;
         border-radius: 100px;
         background: #242424;
         color: whitesmoke;
         cursor: pointer;
-        margin-top: .5rem;
         margin-right: 2rem;
 
     }
@@ -358,6 +353,7 @@ nav .logo {
     font-size: 40px;
     margin: 0;
     display: inline;
+    line-height: 1.15em;
 }
 
 .right-block {
