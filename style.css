@@ -267,6 +267,14 @@ nav {
     z-index: 9999;
 }
 
+nav .logo {
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: whitesmoke;
+    font-style: italic;
+}
+
 .nav-bar-links li {
     list-style: none;
     margin-left: 10px;
